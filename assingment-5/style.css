@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Lato:ital,wght@0,300;0,400;1,700&family=Poppins:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    background-size: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.account{
+    text-align: center;
+    margin: 50px 0;
+}
+.container{
+    max-width:980px;
+    margin:0 auto;
+}
+.family-account{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+.left-part{
+    width:100%;
+}
+.left-part img{
+    width:80%;
+    height: 400px;
+}
+.right-account-part{
+    width:100%;
+    background-color: azure;
+    padding: 20px 40px;
+}
+.income{
+    margin-bottom: 30px;
+}
+.expenses{
+    margin-bottom: 30px;
+}
+.expenses-money{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.expenses-money input{
+    width:50%;
+}
+.calculate-button{
+    color:#fff;
+    background-color: aqua;
+    padding:8px 30px;
+    border: 0;
+}
+.save-button{
+    color: #fff;
+    background-color: aqua;
+    padding:8px 20px;
+    border: 0;
+}
