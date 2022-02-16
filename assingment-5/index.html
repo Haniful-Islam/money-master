@@ -5,47 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Account</title>
+    <title>Assignment-5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- header part -->
     <header>
-        <h2 class="account">Family Account</h2>
+        <h1 class="account "> <span class="color">B</span>ACHELOR <span class="color">A</span>CCOUNT</h1>
     </header>
     <main>
+        <!-- account section -->
         <section class="container">
             <div class="family-account">
                 <div class="left-part">
-                    <img src="img/moneyv.jpg" alt="">
+                    <img src="img/bd-money2.jpg" alt="">
                 </div>
                 <div class="right-account-part">
                     <div class="income">
                         <h3>Income</h3>
                         <label>income :</label>
-                        <input type="text" placeholder="">
+                        <input id="total-income" type="text" placeholder="">
                     </div>
                     <div>
                         <div class="expenses">
                             <h3>Expenses</h3>
                             <div class="expenses-money">
                                 <label>Food:</label>
-                                <input type="text" placeholder="">
+                                <input id="food" type="text" placeholder="">
                                 <label>Rent:</label>
-                                <input type="text" placeholder="">
+                                <input id="rent" type="text" placeholder="">
                                 <label>Clothes:</label>
-                                <input type="text" placeholder="">
+                                <input id="clothes" type="text" placeholder="">
                             </div>
                             <div>
-                                <h4>Total Expenses:$<span>0</span> </h4>
-                                <h4>Balance:$<span>0</span> </h4>
-                                <button class="calculate-button">Calculate</button>
+                                <h4>Total Expenses:$<span id="total-expenses">0</span> </h4>
+                                <h4>Balance:$<span id="balance">0</span> </h4>
+                                <button id="calculate-btn" class="calculate-button">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <div>
                         <label>Save:</label>
-                        <input type="text">
+                        <input class="saving-input" type="text">
                         <span>%</span>
                         <button class="save-button">Save</button>
                         <h4>Saving Ammount:$ <span>0</span> </h4>
@@ -55,6 +57,7 @@
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
