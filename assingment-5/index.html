@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
-    <link rel="stylesheet" href="style.css">
+    <!--============= favicon================ -->
+    <link rel="shortcut icon" href="img/dollar.jpg" type="image/x-icon">
+    <!--============= css style================== -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- header part -->
+    <!--============= header part=============== -->
     <header>
         <h1 class="dollar-account "> <span class="color">B</span>ACHELOR <span class="color">D</span>ollar <span
                 class="color">A</span>CCOUNT</h1>
     </header>
     <main>
-        <!-- account section -->
+        <!--===============dollar account section============= -->
         <section class="container">
             <div class="bacheor-dollar-account">
                 <div class="left-part">
@@ -26,18 +29,18 @@
                     <div class="income">
                         <h3>Income</h3>
                         <label>Income :</label>
-                        <input id="total-income" type="text" placeholder="Your Income">
+                        <input id="total-income" type="number" placeholder="Your Income">
                     </div>
                     <div>
                         <div class="expenses">
                             <h3>Expenses</h3>
                             <div class="expenses-money">
                                 <label>Food:</label>
-                                <input id="food-expenses" type="text" placeholder="Food Expenses">
+                                <input id="food-expenses" type="number" placeholder="Food Expenses">
                                 <label>Rent:</label>
-                                <input id="rent-expenses" type="text" placeholder="Rent Expenses">
+                                <input id="rent-expenses" type="number" placeholder="Rent Expenses">
                                 <label>Clothes:</label>
-                                <input id="clothes-expenses" type="text" placeholder="Clothes Expenses">
+                                <input id="clothes-expenses" type="number" placeholder="Clothes Expenses">
                             </div>
                             <div>
                                 <div class="expenses-total">
@@ -50,7 +53,7 @@
                     </div>
                     <div>
                         <label>Save:</label>
-                        <input id="save-input" class="saving-input" type="text" placeholder="save">
+                        <input id="save-input" class="saving-input" type="number" placeholder="save">
                         <span>%</span>
                         <button id="save-btn" class="save-button">Save</button>
                         <div class="save-ammount">
@@ -62,6 +65,7 @@
             </div>
         </section>
     </main>
+    <!--========== js link=========== -->
     <script src="js/script.js"></script>
 </body>
 
