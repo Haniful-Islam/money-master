@@ -1,43 +1,63 @@
-function bachelorAccount(cost) {
-    const foodInput = document.getElementById(cost);
-    const foodMoney = parseFloat(foodInput.value);
-    const totalMoney = food + rent + clothes;
-    // return totalMoney;
-    const totalExpenses = document.getElementById('total-expenses');
-    totalExpenses.innerText = totalMoney;
+
+
+
+
+function expensesAccount() {
+    //total expenses 
+    const foodInput = document.getElementById('food-expenses');
+    const foodExpenses = parseFloat(foodInput.value);
+
+    const rentInput = document.getElementById('rent-expenses');
+    const rentExpenses = parseFloat(rentInput.value);
+
+    const clothesInput = document.getElementById('clothes-expenses');
+    const clothesExpenses = parseFloat(clothesInput.value);
+
+    const totalExpenses = foodExpenses + rentExpenses + clothesExpenses;
+
+
+    const expenses = document.getElementById('total-expenses');
+    expenses.innerText = totalExpenses;
+    // income
     const incomeInput = document.getElementById('total-income');
     const totalIncome = parseFloat(incomeInput.value);
-    const myIncome = totalIncome - totalMoney;
-    // console.log();
+    const myIncome = totalIncome - totalExpenses;
+    // balance
     const balance = document.getElementById('balance');
     balance.innerText = myIncome;
 
-
-
 }
+//total expenses & balance calculate handle event
 document.getElementById('calculate-btn').addEventListener('click', function () {
-    // const foodInput = document.getElementById('food');
-    // const foodMoney = parseFloat(foodInput.value);
-    // const rentInput = document.getElementById('rent');
-    // const rentMoney = parseFloat(rentInput.value);
-    // const clothesInput = document.getElementById('clothes');
-    // const clothesMoney = parseFloat(clothesInput.value);
-    // const totalMoney = foodMoney + rentMoney + clothesMoney;
-    bachelorAccount('food');
-    bachelorAccount('rent');
-    bachelorAccount('clothes');
-    // console.log(totalMoney);
+
+    expensesAccount();
 
 
-    // const totalExpenses = document.getElementById('total-expenses');
-    // totalExpenses.innerText = totalMoney;
-
-    // const incomeInput = document.getElementById('total-income');
-    // const totalIncome = parseFloat(incomeInput.value);
-    // const myIncome = totalIncome - totalMoney;
-    // // console.log();
-    // const balance = document.getElementById('balance');
-    // balance.innerText = myIncome;
+});
 
 
-})
+//money saving & remaining balance 
+function savingMoneyAccount() {
+    const incomeInput = document.getElementById('total-income');
+    const totalIncome = parseFloat(incomeInput.value);
+
+    const saveInput = document.getElementById('save-input');
+    const saveMoney = parseFloat(saveInput.value);
+    const totalSaveMoney = totalIncome * saveMoney / 100;
+
+    const savingAmmount = document.getElementById('saving-ammount');
+    savingAmmount.innerText = totalSaveMoney;
+
+    const balance = document.getElementById('balance');
+    const totalBalance = balance.innerText;
+    const remainingTotalBalance = totalBalance - totalSaveMoney;
+
+    const remainingBalance = document.getElementById('remaining-balance');
+    remainingBalance.innerText = remainingTotalBalance;
+}
+
+// money saving & remaining balance handle event
+document.getElementById('save-btn').addEventListener('click', function () {
+    savingMoneyAccount();
+
+});

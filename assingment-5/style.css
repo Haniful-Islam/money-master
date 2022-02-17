@@ -16,8 +16,9 @@ input{
     border-radius: 5px;
     border:0;
     outline-style: none;
-    font-size: 18px;
+    font-size: 15px;
     padding: 0 10px;
+    
 }
 /* main section */
 .account{
@@ -28,24 +29,27 @@ input{
     font-size:50px
 }
 .container{
-    max-width:1180px;
+    max-width:1200px;
     margin:0 auto;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 .family-account{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 .left-part{
     width:100%;
+    
 }
 .left-part img{
-    width:90%;
-    height: 520px;
+    width:95%;
+    height: 600px;
+    
 }
 .right-account-part{
     width:100%;
-    background-color:rgba(236, 241, 239, 0.822);
+    background-color:rgba(205, 213, 214, 0.226);
     padding: 20px 40px;
 }
 .income{
@@ -58,14 +62,16 @@ input{
     display: flex;
     flex-direction: column;
 }
-
+.expenses-total{
+    margin:10px 0;
+}
 .calculate-button{
     color:#fff;
     background-color: aqua;
     padding:8px 30px;
     border: 0;
     font-weight: 700;
-    font-size:18px;
+    font-size:18px; 
 }
 .saving-input{
     width:125px;
@@ -74,7 +80,8 @@ input{
     border:0;
     outline-style: none;
     font-size: 18px;
-    padding: 0 8px; 
+    padding: 0 8px;
+   
 }
 .save-button{
     color: #fff;
@@ -82,6 +89,10 @@ input{
     padding:8px 20px;
     border: 0;
     font-weight: 700;
+    
+}
+.save-ammount{
+    margin-top:20px;
 }
 
 /*Media Query*/
