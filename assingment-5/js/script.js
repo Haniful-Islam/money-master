@@ -1,7 +1,6 @@
 
 
 
-
 function expensesAccount() {
     //total expenses 
     const foodInput = document.getElementById('food-expenses');

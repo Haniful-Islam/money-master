@@ -101,6 +101,10 @@ input{
 /*==============Media Query=========*/
 /*=========== Mobile view===========*/
 @media (max-width:688px) {
+    input{
+        width:120px;
+        
+    }
     .bacheor-dollar-account{
         grid-template-columns: 1fr;
     }
@@ -109,6 +113,9 @@ input{
         padding: 10px;
     }
     .right-account-part{
+        margin-top:20px;
+    }
+    .save-button{
         margin-top:20px;
     }
 }
